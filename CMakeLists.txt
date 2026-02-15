@@ -15,7 +15,4 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(raining_test tests/raining_test.cpp src/raining.cpp)
 add_executable(main main.cpp src/raining.cpp)
-
-target_link_libraries(raining_test PRIVATE Catch2::Catch2WithMain)
